@@ -14,7 +14,7 @@ html,body,div,ul,li,p {
 
 
 #header {
-  width: 1589px;
+  width: 100%;
   height: 874px;
   background-color: #2c3e50;
   text-align: center;
@@ -27,20 +27,20 @@ html,body,div,ul,li,p {
     font-size: 48px;
     color: white;
     font-weight: 300;
-    }
-    p {
+  }
+  p {
       font-family: "Open Sans", Arial, sans-serif;
       color: white;
       font-size: 18px;
       font-weight: 300;
-    }
-    img {
+  }
+  img {
       display: block;
       margin: 0 auto;
       padding-top: 100px;
       width: 256px;
       height: 116px;
-    }
+  }
 }
 
 .buttons {
@@ -73,7 +73,7 @@ button {
 
   .stripes {
     background-image: url("images/stripes.png");
-    width: 1589px;
+    width: 100%;
     height: 5px;
   }
 
@@ -82,11 +82,16 @@ button {
     padding-right: 190px;
   }
 
+  .main, .featured, .pictures, .grnarrow, .members, .action {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
   .sidebar {
     position: absolute;
     right: 0;
     width: 190px;
-    height: 100%;
+    height: 98%;
     background-color: #e4e8ea;
     text-align: center;
     padding-top: 119px;
@@ -115,7 +120,6 @@ button {
     width: 32px;
     display: inline-block;
     vertical-align: middle;
-
   }
 
   .sidebar #active {
@@ -128,9 +132,9 @@ button {
 
 
   .main {
-    width: 830px;
+    // width: 830px;
     margin: 0 auto;
-    margin-left: 277px;
+    // margin-left: 277px;
   }
 
   .main .container {
@@ -209,13 +213,12 @@ button {
     font-size: 14px;
     font-weight: lighter;
     padding: 0px 0px 20px;
-    }
+  }
 
   .featured .container {
-      width: 1400px;
-      padding-top: 150px;
+      margin-top: 200px;
       text-align: center;
-    }
+  }
 
   .featured {
     p {
@@ -228,14 +231,15 @@ button {
       font-family: "Open Sans", Arial, sans-serif;
       font-weight: lighter;
       text-transform: uppercase;
-      font-size: 36px;
+      font-size: 33px;
       margin: 0px 0px 50px;
     }
   }
 
 
   .pictures{
-      width: 1400px;
+      // width: 1400px;
+      margin:0 auto;
     }
 
   .pictures .container {
@@ -243,10 +247,13 @@ button {
       margin: 0 auto;
     }
 
-    .pictures ul li {
+  .pictures ul li {
       display: inline-block;
       text-align: center;
-      padding: 0px 30px;
+    }
+
+    .pictures ul .blocks {
+      padding-right: 45px;
     }
 
     .pictures ul li h3 {
@@ -267,19 +274,18 @@ button {
     }
 
     #grnarrow {
-      width: 1400px;
       margin-bottom: 200px;
       text-align: center;
-
     }
 
     .form .container {
-      width: 1400px;
+      // width: 1400px;
       height: 433px;
       background-color: #2c3e50;
       text-align: center;
       color: #fff;
       margin-top: 100px;
+      margin: 0 auto;
     }
 
     .inline-form {
@@ -334,32 +340,35 @@ button {
     }
 
     .members .container {
-      width: 976px;
+      // width: 976px;
       margin-left: 211px;
       display: inline-block;
       vertical-align: middle;
+      margin: 0 auto;
     }
 
     .members {
-      width: 1400px;
+      // width: 1400px;
+      margin: 0 auto;
     }
 
     .members ul {
-      border: 1px solid #8a8a8a;
+      // border: 1px solid #8a8a8a;
       display: inline-block;
-      text-align: center;
       list-style: none;
-      width: 423px;
-      height: 335px;
+      // width: 423px;
+      // height: 335px;
       }
 
       .ealy, .darrow, .wolpert, .benny {
-        width: 423px;
-        height: 335px;
-        margin: 30px;
+        width: 418px;
+        height: 330px;
+        margin: 20px;
+        border: 1px solid #8a8a8a;
         display: inline-block;
         vertical-align: middle;
-      }
+        text-align: center;
+        }
 
       .members {
         img {
@@ -389,7 +398,8 @@ button {
       }
 
       .action {
-        width: 1400px;
+        // width: 1400px;
+        margin: 0 auto;
         text-align: center;
         line-height: 28px;
         h3 {
@@ -416,31 +426,38 @@ button {
         margin-bottom: 110px;
       }
 
-      footer {
-        border-top: 1px solid #d3d3d3;
-        width: 1400px;
-        height: 100px;
+      hr {
+        color: #d3d3d3;
       }
 
-      footer .nav {
-        margin: 50px 0px 0px 80px;
-
+      footer {
+        width: 900px;
+        margin: 0 auto;
+        // border-top: 1px solid #d3d3d3;
       }
 
       footer ul li {
         font-size: 14px;
         font-family: "Open Sans", Arial, sans-serif;
         font-weight: 300;
-        display: inline;
+        display: inline-block;
         text-decoration: none;
         list-style: none;
         padding: 10px;
         vertical-align: middle
+      }
 
-        }
-
-      .pullright li {
-        float: right;
+      footer ul {
         display: inline-block;
         vertical-align: middle;
+        padding: 24px 0px;
+      }
+
+      footer .twitter{
+        margin-left: 100px;
+
+      }
+
+      footer .twitter li {
+        padding: 5px;
       }
