@@ -291,9 +291,7 @@ button {
     .inline-form {
       display: inline-block;
       vertical-align: top;
-
     }
-
 
     .form h2 {
       font-family: "Open Sans", Arial, sans-serif;
@@ -314,7 +312,7 @@ button {
 
     input {
       width: 490px;
-      height: 73px;
+      height: 73.5px;
       font-size: 18px;
       font-family: "Open Sans", Arial, sans-serif;
       font-weight: 300;
@@ -322,10 +320,7 @@ button {
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
       border: none;
-      background: url("images/envelope.png") no-repeat scroll 20px 25px;
-      text-indent: 40px;
-      background-color: white;
-      padding-left: 30px;
+      padding: 0px;
     }
 
     .pure-button {
@@ -366,9 +361,9 @@ button {
       }
 
       .ealy, .darrow, .wolpert, .benny {
-        width: 45%;
+        width: 418px;
         height: 330px;
-        margin: 19px;
+        margin: 20px;
         border: 1px solid #8a8a8a;
         display: inline-block;
         vertical-align: middle;
@@ -377,7 +372,7 @@ button {
 
       .members {
         img {
-          margin-top: 40px;
+          margin-top: 49px;
         }
         h4 {
           font-family: "Open Sans", Arial, sans-serif;
