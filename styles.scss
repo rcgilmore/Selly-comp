@@ -274,9 +274,17 @@ button {
     }
 
     #grnarrow {
+      margin: 0 auto;
+      // margin-bottom: 200px;
+      text-align: center;
+      }
+
+    #formup {
+      margin: 0 48%;
       margin-bottom: 200px;
       text-align: center;
-    }
+      display: inline;
+      }
 
     .form .container {
       // width: 1400px;
@@ -320,8 +328,11 @@ button {
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
       border: none;
-      padding: 0px;
-    }
+      background: url("images/envelope.png") no-repeat scroll 20px 25px;
+      text-indent: 40px;
+      background-color: white;
+      padding-left: 30px;
+      }
 
     .pure-button {
       border-top-left-radius: 0px;
@@ -361,9 +372,9 @@ button {
       }
 
       .ealy, .darrow, .wolpert, .benny {
-        width: 418px;
+        width: 45%;
         height: 330px;
-        margin: 20px;
+        margin: 19px;
         border: 1px solid #8a8a8a;
         display: inline-block;
         vertical-align: middle;
@@ -372,7 +383,7 @@ button {
 
       .members {
         img {
-          margin-top: 49px;
+          margin-top: 40px;
         }
         h4 {
           font-family: "Open Sans", Arial, sans-serif;

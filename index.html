@@ -20,7 +20,10 @@
       <div class= buttons>
         <button class= "btn1" type="button" name="button">TAKE A TOUR</button>
         <button class="btn2" type="button" name="button">WATCH THE VIDEO</button>
-        <img id="arrow" src="images/arrow.png" alt="down arrow" />
+        <div class="down-arrow" attr-next="my-next-section">
+        <section id="my-next-section">
+        <a href="#"><img id="arrow" src="images/arrow.png" alt="down arrow" /></a>
+        </div>
       </div>
     </div>
   </div>
@@ -57,8 +60,10 @@
               <li><a href="#"><img src="images/android.png" width="30px" height="30px" alt="android logo" /></a></li>
             </ul>
             <p>Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel <br> bibendum sapien massa ac turpis faucibus orci luctu non.</p>
-            <a href="#"><img src="images/greenarrow.png" alt="down arrow" /></a>
-          </ul>
+            <div class="down-arrow"  attr-next="my-next-section">
+            <section id="my-next-section">
+              <a href="#"><img src="images/greenarrow.png" alt="down arrow" /></a>
+            </div>
         </div>
         <div class="iphone1">
           <img src="images/iphone.png" width="270px" height="581px" alt="iphone" />
@@ -74,7 +79,10 @@
           <p>
             Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices<br> volutpat. Nullam wisi ultricies.
           </p>
-          <a href="#"><img src="images/greenarrow.png" alt="down arrow" /></a>
+          <div class="down-arrow" attr-next="my-next-section">
+          <section id="my-next-section">
+            <a href="#"><img src="images/greenarrow.png" alt="down arrow" /></a>
+          </div>
         </div>
       </div>
       </div>
@@ -106,10 +114,9 @@
       </div>
     </div>
 
-    <div id="grnarrow">
-      <div class="container">
-         <a href="#"><img src="images/greenarrow.png" alt="down arrow"/></a>
-      </div>
+    <div class ="down-arrow"  attr-next="my-next-section">
+    <section id="my-next-section">
+        <a href="#"><img id="formup" src="images/greenarrow.png" alt="down arrow"/></a>
     </div>
 
     <div class="form">
@@ -203,6 +210,7 @@
         </ul>
     </footer>
   </div>
-
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
