@@ -66,7 +66,7 @@ button {
   position: relative;
   padding-right: 190px; }
 
-.main, .featured, .pictures, .grnarrow, .members, .action {
+#main, #featured, .pictures, .grnarrow, .members, .action {
   max-width: 850px;
   margin: 0 auto; }
 
@@ -79,20 +79,28 @@ button {
   text-align: center;
   padding-top: 119px; }
 
+.menu-fixed {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%; }
+
 #logo {
   width: 89px;
   height: 41px; }
 
 .sidebar ul {
-  text-decoration: none;
-  list-style: none;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 12px;
-  color: #757575;
   padding-top: 35px; }
 
 .sidebar ul li {
-  padding: 15px; }
+  padding: 15px;
+  list-style: none; }
+
+.sidebar a {
+  text-decoration: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 12px;
+  color: #757575; }
 
 .verticalLine {
   border-bottom: 1px solid gray;
@@ -106,10 +114,10 @@ button {
 .sidebar #letter {
   padding-top: 70px; }
 
-.main {
+#main {
   margin: 0 auto; }
 
-.main .container {
+#main .container {
   padding-top: 140px; }
 
 .phone1 {
@@ -143,18 +151,18 @@ button {
 .phone1 #right {
   padding: 0px 10px 0px 20px; }
 
-.main .phone1, .main .iphone1 {
+#main .phone1, #main .iphone1 {
   display: inline-block;
   vertical-align: middle; }
 
 .iphone1 {
   margin-left: 40px; }
 
-.secondmain .iphone2, .secondmain .phone2 {
+#secondmain .iphone2, #secondmain .phone2 {
   display: inline-block;
   vertical-align: middle; }
 
-.secondmain {
+#secondmain {
   padding-top: 150px; }
 
 .iphone2 {
@@ -170,16 +178,16 @@ button {
   font-weight: lighter;
   padding: 0px 0px 20px; }
 
-.featured .container {
+#featured .container {
   margin-top: 200px;
   text-align: center; }
 
-.featured p {
+#featured p {
   font-family: "Georgia", Arial, sans-serif;
   font-style: italic;
   font-size: 14px;
   color: #a5a5a5; }
-.featured h2 {
+#featured h2 {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: lighter;
   text-transform: uppercase;
@@ -225,7 +233,7 @@ button {
   text-align: center;
   display: inline; }
 
-.form .container {
+#form .container {
   height: 433px;
   background-color: #2c3e50;
   text-align: center;
@@ -237,15 +245,14 @@ button {
   display: inline-block;
   vertical-align: top; }
 
-.form h2 {
+#form h2 {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 36px;
   font-weight: lighter;
   padding-top: 100px;
   margin: 0 auto;
   text-align: center; }
-
-.form p {
+#form p {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: lighter;
@@ -270,7 +277,7 @@ input {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px; }
 
-.form img {
+#form img {
   width: 691px;
   height: 42px; }
 

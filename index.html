@@ -20,10 +20,8 @@
       <div class= buttons>
         <button class= "btn1" type="button" name="button">TAKE A TOUR</button>
         <button class="btn2" type="button" name="button">WATCH THE VIDEO</button>
-        <div class="down-arrow" attr-next="my-next-section">
-        <section id="my-next-section">
-        <a href="#"><img id="arrow" src="images/arrow.png" alt="down arrow" /></a>
-        </div>
+
+        <a class="down-arrow" next="main" href="#main"><img id="arrow" src="images/arrow.png" alt="down arrow"/></a>
       </div>
     </div>
   </div>
@@ -36,20 +34,20 @@
     <aside class="sidebar">
       <img id="logo"src="images/sellyblack.png" alt="selly logo" />
       <ul>
-        <li>LOREM DOLOR</li>
+        <li><a href="#">LOREM DOLOR</a></li>
         <div class="verticalLine"></div>
-        <li id="active">GRAVIDA</li>
+        <li><a href="#">GRAVIDA</a></li>
         <div class="verticalLine"></div>
-        <li>UT SAGUTTIS&trade;</li>
+        <li><a href="#">UT SAGUTTIS&trade;</a></li>
         <div class="verticalLine"></div>
-        <li>SIGN UP</li>
+        <li><a href="#">SIGN UP</a></li>
         <div class="verticalLine"></div>
-        <li>VEL BIBENDUM</li>
+        <li><a href="#">VEL BIBENDUM</a></li>
       </ul>
       <img id="letter"src="images/mail.png" alt="mail symbol" width="56px" height="56px"/>
     </aside>
 
-    <div class="main">
+    <div id="main" class="content-section" attr-section="secondmain">
       <div class="container">
         <div class="phone1">
           <p class="p1">Lorem dolor</p>
@@ -60,16 +58,13 @@
               <li><a href="#"><img src="images/android.png" width="30px" height="30px" alt="android logo" /></a></li>
             </ul>
             <p>Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel <br> bibendum sapien massa ac turpis faucibus orci luctu non.</p>
-            <div class="down-arrow"  attr-next="my-next-section">
-            <section id="my-next-section">
-              <a href="#"><img src="images/greenarrow.png" alt="down arrow" /></a>
-            </div>
-        </div>
+            <a class="down-arrow"  next="secondmain" href="#secondmain"><img src="images/greenarrow.png" alt="down arrow" /></a>
+          </div>
         <div class="iphone1">
           <img src="images/iphone.png" width="270px" height="581px" alt="iphone" />
         </div>
 
-      <div class="secondmain">
+      <div id="secondmain" class="content-section">
         <div class="iphone2">
           <img src="images/iphone.png" width="270px" height="581px" alt="iphone"/>
         </div>
@@ -79,16 +74,14 @@
           <p>
             Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices<br> volutpat. Nullam wisi ultricies.
           </p>
-          <div class="down-arrow" attr-next="my-next-section">
-          <section id="my-next-section">
-            <a href="#"><img src="images/greenarrow.png" alt="down arrow" /></a>
-          </div>
+            <a class="down-arrow" next="featured" href="#featured"><img src="images/greenarrow.png" alt="down arrow" /></a>
+
         </div>
       </div>
       </div>
     </div>
 
-    <div class="featured">
+    <div id="featured" class="content-section">
       <div class="container">
         <p>
           <em>Ut Sagittis&trade;</em>
@@ -113,13 +106,11 @@
         </ul>
       </div>
     </div>
+      <div>
+      <a class ="down-arrow"  next="form" href="#"><img id="formup" src="images/greenarrow.png" alt="down arrow"/></a>
+      </div>
 
-    <div class ="down-arrow"  attr-next="my-next-section">
-    <section id="my-next-section">
-        <a href="#"><img id="formup" src="images/greenarrow.png" alt="down arrow"/></a>
-    </div>
-
-    <div class="form">
+    <div id="form" class="content-section">
       <div class="container">
         <h2>SIGN UP FOR FREE AND START USING SELLYS</h2>
         <p>Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies.</p>
@@ -133,7 +124,7 @@
 
     <div class="stripes2"></div>
 
-    <div class="featured">
+    <div id="featured" class="content-section">
       <div class="container">
         <p>
           <em>Vel Bibendum</em>
@@ -210,7 +201,10 @@
         </ul>
     </footer>
   </div>
-  <script type="text/javascript" src="jquery.min.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+  <script type="text/javascript" src="/js/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="/js/index.js"></script>
   </body>
 </html>
