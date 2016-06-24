@@ -33,21 +33,21 @@
 
     <aside class="sidebar">
       <img id="logo"src="images/sellyblack.png" alt="selly logo" />
-      <ul>
-        <li><a href="#">LOREM DOLOR</a></li>
+      <ul class='menu'>
+        <li id="lorem"><a id="link"href="#">LOREM DOLOR</a></li>
         <div class="verticalLine"></div>
-        <li><a href="#">GRAVIDA</a></li>
+        <li id="gravida"><a id="link" href="#">GRAVIDA</a></li>
         <div class="verticalLine"></div>
-        <li><a href="#">UT SAGUTTIS&trade;</a></li>
+        <li id="ut"><a id="link"href="#">UT SAGUTTIS&trade;</a></li>
         <div class="verticalLine"></div>
-        <li><a href="#">SIGN UP</a></li>
+        <li id="signup"><a id="link" href="#form">SIGN UP</a></li>
         <div class="verticalLine"></div>
-        <li><a href="#">VEL BIBENDUM</a></li>
+        <li id="vel"><a id="link" href="#featured2">VEL BIBENDUM</a></li>
       </ul>
       <img id="letter"src="images/mail.png" alt="mail symbol" width="56px" height="56px"/>
     </aside>
 
-    <div id="main" class="content-section" attr-section="secondmain">
+    <div id="main">
       <div class="container">
         <div class="phone1">
           <p class="p1">Lorem dolor</p>
@@ -81,14 +81,11 @@
       </div>
     </div>
 
-    <div id="featured" class="content-section">
-      <div class="container">
-        <p>
-          <em>Ut Sagittis&trade;</em>
-        </p>
-          <h2>Quisque cursus et, porttitor risus. Aliquam sem</h2>
-      </div>
-    </div>
+    <div id="featured">
+      <p>
+        <em>Ut Sagittis&trade;</em>
+      </p>
+        <h2>Quisque cursus et, porttitor risus. Aliquam sem</h2>
 
     <div class="pictures">
       <div class="container">
@@ -104,27 +101,33 @@
             <h3>Aliquam Erat</h3>
             <p><em>Cum sociis natoque penatibus et<br>ultrices vullam wisi ultricies</em></p></li>
         </ul>
+        </div>
       </div>
     </div>
       <div>
       <a class ="down-arrow"  next="form" href="#"><img id="formup" src="images/greenarrow.png" alt="down arrow"/></a>
       </div>
 
-    <div id="form" class="content-section">
+
+    <div id="form">
       <div class="container">
         <h2>SIGN UP FOR FREE AND START USING SELLYS</h2>
-        <p>Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies.</p>
+        <p class=>Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies.</p>
+        <form>
         <div class="inline-form">
-          <input class="enter" type="email" placeholder="name@domain.com">
-        </div><button type="submit" class="pure-button pure-button-primary">SIGN UP NOW</button>
-        <div><img src="images/warning.png" alt="error message" />
+          <input class="text" id="txtEmail" type="email" placeholder="name@domain.com">
+        </div><button type="submit" id="btnValidate" value="validateEmail" class="pure-button">SIGN UP NOW</button>
+      </form>
+        <div id="validate">
+          <div class="alert">
+          </div>
         </div>
       </div>
     </div>
 
     <div class="stripes2"></div>
 
-    <div id="featured" class="content-section">
+    <div id="featured2">
       <div class="container">
         <p>
           <em>Vel Bibendum</em>

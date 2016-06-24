@@ -4,7 +4,8 @@ html, body, div, ul, li, p {
   border: 0;
   margin-before: 0;
   margin-after: 0;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  box-sizing: border-box; }
 
 button {
   margin: 0;
@@ -70,6 +71,12 @@ button {
   max-width: 850px;
   margin: 0 auto; }
 
+.active {
+  font-weight: bold;
+  background-color: rgba(22, 160, 133, 0.6);
+  border-radius: 5px;
+  color: white; }
+
 .sidebar {
   position: absolute;
   right: 0;
@@ -96,11 +103,11 @@ button {
   padding: 15px;
   list-style: none; }
 
-.sidebar a {
+#link {
   text-decoration: none;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
-  color: #757575; }
+  color: black; }
 
 .verticalLine {
   border-bottom: 1px solid gray;
@@ -108,10 +115,7 @@ button {
   display: inline-block;
   vertical-align: middle; }
 
-.sidebar #active {
-  color: #383838; }
-
-.sidebar #letter {
+#letter {
   padding-top: 70px; }
 
 #main {
@@ -178,16 +182,17 @@ button {
   font-weight: lighter;
   padding: 0px 0px 20px; }
 
-#featured .container {
-  margin-top: 200px;
+#featured, #featured2 {
+  margin-top: 100px;
+  padding-top: 100px;
   text-align: center; }
 
-#featured p {
+#featured p, #featured2 p {
   font-family: "Georgia", Arial, sans-serif;
   font-style: italic;
   font-size: 14px;
   color: #a5a5a5; }
-#featured h2 {
+#featured h2, #featured2 h2 {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: lighter;
   text-transform: uppercase;
@@ -198,15 +203,12 @@ button {
   margin: 0 auto; }
 
 .pictures .container {
-  text-align: center;
   margin: 0 auto; }
 
 .pictures ul li {
   display: inline-block;
-  text-align: center; }
-
-.pictures ul .blocks {
-  padding-right: 45px; }
+  text-align: center;
+  padding: 2.1%; }
 
 .pictures ul li h3 {
   font-family: "Open Sans", Arial, sans-serif;
@@ -260,7 +262,7 @@ button {
 
 input {
   width: 490px;
-  height: 73.5px;
+  height: 73px;
   font-size: 18px;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
@@ -277,9 +279,22 @@ input {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px; }
 
-#form img {
+.warning {
   width: 691px;
-  height: 42px; }
+  height: 42px;
+  padding: 10px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+  font-family: Georgia, Arial, sans-serif;
+  border-radius: 5px; }
+
+.alert {
+  background: url("images/alert.png") no-repeat left center; }
 
 .stripes2 {
   background-image: url("images/stripes.png");
