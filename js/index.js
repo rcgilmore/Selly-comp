@@ -21,7 +21,7 @@ $(document).ready(function(){
           }
           else {
           // $('#validate').css({'visibility': 'hidden'});
-          $('#validate').addClass('warning alert').css({'visibility': 'visible','background-color':'#f26c4f'});
+          $('#validate').addClass('alert warning').css({'visibility': 'visible','background-color':'#f26c4f'});
           $('#validate').text("'" + sEmail + "'" + ' is not a valid email address.');
           console.log("bye");
         }

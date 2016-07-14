@@ -92,7 +92,7 @@ button {
   }
   .active {
     font-weight: bold;
-    background-color: rgba(22, 160, 133, 0.6);
+    background-color: rgba(22, 160, 133, 0.7);
     border-radius: 5px;
     color: white;
     }
@@ -356,12 +356,19 @@ button {
     }
 
 
+    .alert {
+    background: url("images/alert.png") no-repeat left center;
+    display: inline-block;
+    text-align: center;
+    margin:0 auto;
+    }
+
     .warning {
       width: 691px;
       height: 42px;
       padding: 10px;
       vertical-align: middle;
-      display: inline-block;
+      display: block;
       text-align: center;
       margin: 0 auto;
       color:#fff;
@@ -370,12 +377,6 @@ button {
       font-family: Georgia, Arial, sans-serif;
       border-radius: 5px;
       }
-
-      .alert {
-      background: url("images/alert.png") no-repeat left center;
-      }
-
-
 
     .stripes2 {
       background-image: url("images/stripes.png");
