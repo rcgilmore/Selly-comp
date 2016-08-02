@@ -1,10 +1,9 @@
-
-$(document).ready(function(){
+$(document).ready(function () {
   // $('#validate').css({'visibility': 'hidden'});
     var sEmail = $('#txtEmail').val();
 
       function validateEmail(sEmail) {
-        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        var filter = '/^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/';
 
       return filter.test(sEmail);
       }
