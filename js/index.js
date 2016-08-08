@@ -1,6 +1,5 @@
 $(document).ready(function () {
-  // $('#validate').css({'visibility': 'hidden'});
-    var sEmail = $('#txtEmail').val();
+      var sEmail = $('#txtEmail').val();
 
       function validateEmail(sEmail) {
         var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
@@ -13,17 +12,17 @@ $(document).ready(function () {
     $('#btnValidate').on('click', function(event) {
           var sEmail = $('#txtEmail').val();
             if (validateEmail(sEmail)){
-            $('#validate').addClass('success');
-            $('#validate').removeClass('warning');
-            $('#message').removeClass('error_image');
-            $('#message').text("'" + sEmail + "'" + ' has been added!');
+              $('#validate').addClass('success');
+             $('#validate').removeClass('warning');
+             $('#message').removeClass('error_image');
+             $('#message').text("'" + sEmail + "'" + ' has been added!');
             event.preventDefault();
           }
           else {
-          $('#validate').addClass('warning');
-          $('#validate').removeClass('success');
-          $('#message').addClass('error_image');
-          $('#message').text("'" + sEmail + "'" + ' is not a valid email address.');
+            $('#validate').addClass('warning');
+           $('#validate').removeClass('success');
+           $('#message').addClass('error_image');
+           $('#message').text("'" + sEmail + "'" + ' is not a valid email address.');
           console.log("bye");
         }
     });
