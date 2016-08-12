@@ -104,17 +104,18 @@ button {
   padding: 15px;
   list-style: none; }
 
-#link {
+.menu a {
   text-decoration: none;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
   color: black; }
 
-.verticalLine {
+.sidebar li.line {
   border-bottom: 1px solid gray;
   width: 32px;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding: 0; }
 
 #letter {
   padding-top: 70px; }
